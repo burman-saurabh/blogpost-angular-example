@@ -1,0 +1,19 @@
+<!-- <style>
+  .card-title{
+      color: orange;
+  }
+</style> -->
+
+<div class="card w-25 m-2">
+  <div class="card-header" [ngClass]="{'fav':post.favorite}">
+    <h4 class="card-title">{{post.title}}</h4>
+  </div>
+  <div class="card-body">
+    <h6 class="card-subtitle">{{post.description}}</h6>
+    <p class="card-text">{{postFullText}}</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary w-100 mb-2" (click)="toggleText()">{{read}}</button>
+    <button class="btn btn-primary w-100" (click)="favPost()">Fav/Un-Fav</button>
+  </div>
+</div>
